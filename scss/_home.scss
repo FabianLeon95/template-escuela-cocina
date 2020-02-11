@@ -1,0 +1,49 @@
+.home-box {
+    > div {
+        height: 20rem;
+    }
+    .content {
+        border-top: 1.5px solid;
+        border-bottom: 1.5px solid;
+    }
+}
+
+.bg-home {
+    background-size: cover;
+    background-position: top center;
+    &.bg-home-1 {
+        background-image: url('../img/principal1.jpg');
+    }
+    &.bg-home-2 {
+        background-image: url('../img/principal2.jpg');
+    }
+}
+
+.bg-join {
+    background-image: url('../img/chef_bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    .row {
+        height: 20rem;
+    }
+}
+
+
+
+@media (min-width: 768px) {
+    .home-box {
+        > div {
+            height: 35rem;
+        }
+        &.home-box-bottom {
+           .bg-gray{
+                order: 2;
+           }
+        }
+    }
+    .bg-join {
+        .row {
+            height: 35rem;
+        }
+    }
+}

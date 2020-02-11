@@ -1,0 +1,48 @@
+@import 'variables';
+
+@import 'bootstrap/bootstrap';
+
+@import 'header';
+@import 'footer';
+@import 'about';
+@import 'blog';
+@import 'course';
+@import 'home';
+
+p {
+    line-height: 1.75rem;
+}
+
+.img-featured {
+    height: 24rem;
+    background-size: cover;
+}
+
+.box-content {
+    margin-top: -5rem;
+    position: relative;
+    z-index: 999;
+}
+
+.divider {
+    &::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100px;
+        margin: 0 auto;
+        background-image: url('../img/separador.png');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &.inverse{
+        &::after {
+            background-image: url('../img/separador-inverso.png');
+        }
+    }
+    
+}
+
+.bg-gray {
+    background-color: $gray-200;
+}

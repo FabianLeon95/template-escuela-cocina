@@ -1,0 +1,28 @@
+.header{
+    .navbar-toggler-icon {
+        background-image: url('../img/bars.svg');
+    }
+    .nav-link {
+        &::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: $primary;
+            transition: width .3s;
+        }
+        &:hover {
+            color: $primary;
+            &::after{
+                width: 100%;
+            }
+        }
+        color: $black;
+        &.active, &.current_page_item {
+            color: $primary;
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+}
